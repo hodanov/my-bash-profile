@@ -30,6 +30,6 @@ alias pip="pip3"
 ####################
 # Load git and docker completion
 ####################
-zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+zstyle ':completion:*:*:git:*' script ~/.zsh/completion/git-completion.bash
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
