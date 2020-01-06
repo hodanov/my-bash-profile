@@ -31,5 +31,5 @@ alias pip="pip3"
 # Load Git completion
 ####################
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
-fpath=(~/.zsh $fpath)
-autoload -Uz compinit && compinit
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
