@@ -7,7 +7,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 HOST_NAME=`hostname`
 USER_NAME=`whoami`
 
-PS1="%K{green} $USER_NAME@$HOST_NAME %k%F{green}%K{white}%f%k%F{black}%K{white} %d %f%k "
+PS1="%K{cyan}%F{black} $USER_NAME@$HOST_NAME %f%k%F{cyan}%K{white}%k%f%F{black}%K{white} %d %k%f "
 
 export LC_ALL=en_US.UTF-8
 
@@ -28,7 +28,7 @@ alias pip="pip3"
 # export PATH=$PATH:`go env GOROOT`/bin
 
 ####################
-# Load Git completion
+# Load git and docker completion
 ####################
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh/completion $fpath)
