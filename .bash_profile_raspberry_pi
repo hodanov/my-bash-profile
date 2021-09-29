@@ -1,0 +1,8 @@
+BEGIN="\[\e[1;37;45m\]"
+MIDDLE="\[\e[0;30;47m\]"
+END="\[\e[m\]"
+HOST_NAME=`hostname`
+export PS1="${BEGIN} \u@${HOST_NAME} ${MIDDLE} \w ${END} "
+
+#alias python="python3"
+#alias pip="pip3"
